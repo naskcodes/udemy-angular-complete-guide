@@ -7,11 +7,7 @@ import { Component, Input } from '@angular/core';
   templateUrl: './tasks.component.html',
   styleUrl: './tasks.component.css'
 })
+
 export class TasksComponent {
-  /* 
-    Correção do exercício:
-      @Input({ required: true }) name!: string;
-  */
-  
-  @Input() task!: string;
+  @Input() name: string | undefined;
 }
