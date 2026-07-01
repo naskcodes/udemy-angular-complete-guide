@@ -8,10 +8,5 @@ import { Component, Input } from '@angular/core';
   styleUrl: './tasks.component.css'
 })
 export class TasksComponent {
-  /* 
-    Correção do exercício:
-      @Input({ required: true }) name!: string;
-  */
-  
-  @Input() task!: string;
+  @Input({ required: true }) name!: string;
 }

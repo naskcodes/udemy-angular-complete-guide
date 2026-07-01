@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 import { HeaderComponent } from './header/header.component';
 import { UserComponent } from './user/user.component';
 import { DUMMY_USERS } from './dummy-user';
-import { TasksComponent } from './tasks Roberta/tasks.component';
+import { TasksComponent } from './tasks/tasks.component';
 
 @Component({
   selector: 'app-root',
@@ -14,7 +14,6 @@ import { TasksComponent } from './tasks Roberta/tasks.component';
 
 export class AppComponent {
   users = DUMMY_USERS;
-  // selectedUser: number = -1;
   selectedUserId?: string;
 
   get selectedUser() {
@@ -24,8 +23,4 @@ export class AppComponent {
   onSelectUser(id: string) {
     this.selectedUserId = id;
   }
-  
-  // onSelectUser(id: string) {
-  //   this.selectedUser = this.users.findIndex(user => user.id == id);
-  // }
 }
